@@ -25,7 +25,7 @@ set -x
 
 
 CUDA_VISIBLE_DEVICES=0 \
-speech2text.py --asr_type "aed" --model_dir $model_dir $decode_args $wavs --output $out
+speech2text.py --asr_type "aed" --use_gpu 0 --model_dir $model_dir $decode_args $wavs --output $out
 
 
 ref="wav/text"
